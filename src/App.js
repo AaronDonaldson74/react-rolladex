@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ContactCards from "./components/contact-cards";
+import Greeting from "./components/greeting";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <div>
+        <Greeting name="Aaron" age="47"/>
+        <Greeting name="Kathy"/>
+        <Greeting name="Parker"/>
+        <Greeting name="Sabrina"/>
+      </div> */}
+      <div className="cardInfo">
+          <img src="https://image.flaticon.com/icons/svg/2494/2494965.svg"></img>
+        <div>
+        <ContactCards firstName="Aaron" lastName="Donaldson" phoneNumber="307-555-1234"/>
+        </div>
+      </div>
     </div>
   );
 }
